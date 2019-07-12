@@ -1,0 +1,122 @@
+h1 h2 h3 h4 h5 h6 p{
+	margin:0;
+}
+body{
+	font-family: 'Montserrat', sans-serif;
+	position: relative;
+	margin:0;
+	min-height:100vh;
+}
+.container{
+	height:300px;
+	text-align:center;
+}
+.container h1{
+	letter-spacing: 2px;
+	margin: 40px 0 0 0;
+}
+.mini-container{
+	margin:auto;
+	max-width:400px;
+}
+.buffer{
+	height:40px;
+}
+#enter-city{
+	font-size:20px;
+	letter-spacing: 1px;
+}
+.upper{
+	font-size:50px;
+}
+.my-link{
+	font-size:16px;
+	color:white;
+}
+.navbar{
+	background-color: #191919;
+}
+.footer{
+	background-color:#191919;
+
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	min-height:100px;
+	margin-top:10px;
+	text-align:center;
+	padding:20px 0 10px 0;
+	color:white;
+	font-size:15px;
+	font-weight:lighter;
+}
+.my-link:hover{
+	text-decoration: none;
+	color:orange;
+	transition: color 0.5s ease;
+}
+a:link{
+	transition: color 0.5s ease;
+}
+a:visited{
+	color:white;
+}
+.smbox{
+	display:flex;
+	justify-content: center;
+}
+.smicon{
+	background-color:white;
+	height:38px;
+	width:40px;
+	border-radius:50%;
+	margin:20px 10px 10px 10px;
+	transition: background-color 0.5s ease;
+}
+.smicon img{
+	height:25px;
+	width:25px;
+	margin:6px 0 0 0;
+}
+.smicon:hover{
+	background-color:orange;
+}
+h4{
+	font-weight:bolder;
+}
+#temperature{
+	font-weight:lighter;
+	font-size:100px;
+}
+#condition{
+	text-transform: uppercase;
+	margin:20px;
+}
+#root{
+	margin:auto;
+	letter-spacing: 2px;
+	max-width:400px;
+	padding:40px 0 40px 0;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (max-width: 600px) {
+  h1{
+  	font-size:30px;
+  }
+  h4{
+  	font-weight:lighter;
+  	font-size:20px;
+  }
+  .upper{
+  	font-size:30px;
+  }
+  .buffer{
+  	height:10px;
+  }
+  #temperature{
+  	font-size:40px;
+  }
+}
