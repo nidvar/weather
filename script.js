@@ -5,7 +5,7 @@ const api_key = '34GKl5HXlgKxVpHxOkG0YERBe1k37p2h';
 document.getElementById('root').style.display = 'none';
 
 const city_key = (city_name)=>{
-	fetch(`http://dataservice.accuweather.com/locations/v1/cities/search?apikey=${api_key}&q=${city_name}`).then((response)=>{
+	fetch(`https://dataservice.accuweather.com/locations/v1/cities/search?apikey=${api_key}&q=${city_name}`).then((response)=>{
 		return response.json();
 	}).then((data)=>{
 		display_city_name(data[0].LocalizedName, data[0].Country.LocalizedName)
@@ -18,7 +18,7 @@ const city_key = (city_name)=>{
 }
 
 const weather_condition = (city_key)=>{
-	fetch(`http://dataservice.accuweather.com/currentconditions/v1/${city_key}?apikey=${api_key}`).then((response)=>{
+	fetch(`https://dataservice.accuweather.com/currentconditions/v1/${city_key}?apikey=${api_key}`).then((response)=>{
 		return response.json()
 	}).then((data)=>{
 		display_values(data[0].WeatherText, data[0].Temperature.Metric.Value + '&deg;C')
