@@ -1,6 +1,6 @@
 "use strict";
 
-const api_key = '34GKl5HXlgKxVpHxOkG0YERBe1k37p2h';
+const api_key = '0GKdzqk7Gl5x0GQeL5PnJhvAQC6awCIC';
 
 document.getElementById('root').style.display = 'none';
 
